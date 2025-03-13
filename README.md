@@ -50,4 +50,5 @@ As técnicas e tecnologias que serão utilizadas neste projeto são:
 ## Detalhes do React e Typescript
 
 Para mais detalhes do React: [React Documentation](https://react.dev/)
+
 Para mais detalhes do Typescript: [Typescript Documentation](https://www.typescriptlang.org/)
