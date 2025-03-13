@@ -1,4 +1,4 @@
-import avaliation from './assets/avaliacao.png'
+import rating from './assets/avaliacao.png'
 import graphic from './assets/grafico.png'
 import consultation from './assets/consulta.png'
 import React from 'react'
@@ -10,7 +10,7 @@ interface Props {
 }
 
 interface IImage {
-  avaliation: string,
+  rating: string,
   graphic: string,
   consultation: string
 }
@@ -19,12 +19,15 @@ const StyledSpan = styled.span<Props>`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 23px;
+  margin-right: 5px;
+  margin-bottom: 0;
   background-image: ${props => props.image ? `url(${props.image})` : 'none'}
 `
 
 const StyledTitle = styled.h2`
+  margin-top: 1em;
   color: var(--azul-claro);
 `
 
@@ -34,9 +37,8 @@ const StyledContainer = styled.div`
 `
 
 function Title({ image, children }: Props) {
-
   const imageList: IImage = {
-    avaliation: avaliation,
+    rating: rating,
     graphic: graphic,
     consultation: consultation
   }

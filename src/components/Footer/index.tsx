@@ -15,7 +15,7 @@ const StyledFooter = styled.footer`
 const StyledList = styled.ul`
   display: flex;
   justify-content: space-around;
-  width: 10%;
+  width: 15%;
   margin: 1em auto;
 `
 
@@ -41,7 +41,7 @@ function Footer() {
     <StyledFooter>
       <StyledList>
         {socialMediaList.map(item => (
-          <StyledItem>
+          <StyledItem key={item.name}>
             <a href="/#">
               <img src={item.icon} alt={`logo do ${item.name}`} />
             </a>

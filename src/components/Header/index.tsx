@@ -18,6 +18,16 @@ const Container = styled.div`
 const StyledLink = styled.a`
   color: var(--azul-escuro);
   font-weight: 700;
+  background-color: var(--cinza-claro);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--azul-claro);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
 `
 
 function Header() {
